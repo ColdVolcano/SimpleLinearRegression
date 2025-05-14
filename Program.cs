@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-float[][] data = [[23, 651], [26, 762], [30, 856], [34, 1063], [43, 1190], [48, 1298], [52, 1421], [57, 1440], [58, 1518]];
+﻿float[][] data = [[23, 651], [26, 762], [30, 856], [34, 1063], [43, 1190], [48, 1298], [52, 1421], [57, 1440], [58, 1518]];
 
 var model = SimpleLinearRegression.Train(data);
 
