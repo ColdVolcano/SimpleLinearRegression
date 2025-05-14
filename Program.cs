@@ -27,10 +27,10 @@ public class SimpleLinearRegression
     
     public static SimpleLinearRegression Train(float[][] data)
     {
-        float xSum = data.Select(d => d[0]).Sum();
-        float ySum = data.Select(d => d[1]).Sum();
-        float x2Sum = data.Select(d => d[0] * d[0]).Sum();
-        float xySum = data.Select(d => d[0] * d[1]).Sum();
+        var xSum = data.Select(d => d[0]).Sum();
+        var ySum = data.Select(d => d[1]).Sum();
+        var x2Sum = data.Select(d => d[0] * d[0]).Sum();
+        var xySum = data.Select(d => d[0] * d[1]).Sum();
         return new SimpleLinearRegression((x2Sum * ySum - xSum * xySum) / (data.Length * x2Sum - xSum * xSum), (data.Length * xySum - xSum * ySum) / (data.Length * x2Sum - xSum * xSum));
     }
 
